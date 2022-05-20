@@ -1,0 +1,19 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "project 3: ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lip-balm/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lip-balm/project/issues"
+  },
+  "homepage": "https://github.com/lip-balm/project#readme"
+}

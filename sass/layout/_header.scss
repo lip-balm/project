@@ -1,0 +1,20 @@
+header {@extend .flexcenter;
+    @media only screen and (max-width : 767px) {
+    #location {background-color: $dark-gray;
+        box-shadow: inset 0px 5px 10px -9px #353535;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        }
+    }
+}
+
+#logo {
+    @media only screen and (max-width : 767px) {
+        padding: 25px 0px 8px 0px;
+            img {height: 28px;};
+
+    }
+}

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-.flexcenter, #restaurantcards {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+.flexcenter, header, #explore, #restaurantcards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,35 +16,32 @@
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 @media only screen and (max-width: 767px) {
-  header {
+  header #location {
+    background-color: #EAEAEA;
+    -webkit-box-shadow: inset 0px 5px 10px -9px #353535;
+            box-shadow: inset 0px 5px 10px -9px #353535;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-
-header #location {
-  background-color: #EAEAEA;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -58,8 +55,6 @@ header #location {
 
 @media only screen and (max-width: 767px) {
   #explore {
-    background-color: #F6F6F6;
-    height: 265px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,32 +62,52 @@ header #location {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: #F6F6F6;
+    height: 290px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 20px;
   }
 }
 
-#explorebutton {
+button {
+  border: none;
+  height: 52px;
+  width: 222px;
   border-radius: 50px;
+  -webkit-box-shadow: 4px 4px 8px darkgray;
+          box-shadow: 4px 4px 8px darkgray;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+button a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
 }
 
 #Restaurants {
   background-color: #F6F6F6;
 }
 
-#Restaurants img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 175px;
-  border-radius: 20px 20px 0px 0px;
+@media only screen and (max-width: 767px) {
+  #Restaurants {
+    height: 1210px;
+    padding-top: 35px;
+  }
+  #Restaurants img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 170px;
+    border-radius: 20px 20px 0px 0px;
+  }
 }
 
 #restaurantcards {
@@ -101,9 +116,9 @@ header #location {
 
 .restaurantcard {
   background-color: white;
-  -webkit-box-shadow: 0 0 10px lightgray;
-          box-shadow: 0 0 10px lightgray;
-  height: 245px;
+  -webkit-box-shadow: 0 5px 5px #EAEAEA;
+          box-shadow: 0 5px 5px #EAEAEA;
+  height: 255px;
   width: 338px;
   border-radius: 20px;
 }
@@ -112,16 +127,49 @@ header #location {
   margin: 0px 0px 0px 15px;
 }
 
-span #restaurantcarddetails {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+#restaurantcarddetails {
+  display: inline-block;
+}
+
+footer {
+  height: 200px;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    background-color: #353535;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 0 25px;
+  }
+  footer div {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+  }
+  footer ul {
+    padding: 0;
+    color: white;
+    list-style: none;
+  }
+  footer ul a {
+    color: white;
+    font-size: 16px;
+  }
+  footer ul li {
+    margin-top: 8px;
+  }
 }
 
 a {

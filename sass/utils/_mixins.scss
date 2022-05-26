@@ -1,8 +1,2 @@
-@mixin box-shadow ($color) {
-    -webkit-box-shadow: inset 0px 5px 10px -9px $color;
-    -moz-box-shadow: inset 0px 5px 10px -9px $color;
-    box-shadow: inset 0px 5px 10px -9px $color;
-}
-
-
-  //         box-shadow: inset 0px 5px 10px -9px #353535;
+@mixin box-shadow {box-shadow: 0 5px 5px $medium-gray;}
+@mixin button-box-shadow {box-shadow: 4px 4px 8px darkgray;}

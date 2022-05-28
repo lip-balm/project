@@ -11,8 +11,8 @@
     }
 }
 
-button {
-    a{font-size: 16px;
+.explorebutton {
+    a {font-size: 16px;
         font-weight: 400;
         color: white;
     }
@@ -24,33 +24,70 @@ button {
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     }
 
+#instructions {height: 380px;
+    padding-top: 30px;
+    ul {list-style: none;
+        padding: 0;
+        @extend .flexcenter;}
+    .instructionbuttons {
+        background-color: $light-gray;
+        border: none;
+        height: 70px;
+        width: 330px;
+        border-radius: 22px; 
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 108%;
+        @include button-box-shadow;}
+    li {margin-bottom: 25px;}
+    .fas {font-size: 112%;
+    padding-bottom: 5px;}
+    }
+
+
+#instructions #restaurants, h2 {margin-left: 18.5px;
+    margin-bottom: 22px;}
+
 #Restaurants{ background-color: $light-gray;
     @media only screen and (max-width : 767px) {
         height: 1210px;
         padding-top: 35px;
-
     img {object-fit: cover;
         width: 100%;
-        height: 170px;
-        border-radius: 20px 20px 0px 0px;
+        height: 180px;
+        border-radius: 20px 20px 0px 0px;}
+    .restaurantcard {background-color: white;
+        @include box-shadow;
+        height: 255px;
+        width: 338px;
+        border-radius: 20px;
+        }  
     }
 }   
-}
 
 #restaurantcards {
     @extend .flexcenter;
     gap: 18px;
             }
 
-.restaurantcard {background-color: white;
-    @include box-shadow;
-    height: 255px;
-    width: 338px;
-    border-radius: 20px;
-        h3, p {margin: 0px 0px 0px 15px;
-        }
-    }
     
-#restaurantcarddetails  {display: inline-block;
+.restaurantcarddetails  {display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
- }
+}
+
+
+.restaurantcarddetails2 {font-size: 150%;
+    .heartbutton {border: none;
+                    background-color: white;
+                .fas {display: none;}
+    &:active {
+        .far {display: none;}
+        .fas {display: inline;}
+                }
+    }
+}               

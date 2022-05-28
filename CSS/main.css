@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
-.flexcenter, header, #explore, #restaurantcards {
+.flexcenter, header, #explore, #instructions ul, #restaurantcards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,12 +41,18 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 15px;
+    font-size: 16.5px;
+    padding-top: 1px;
+  }
+  header #location .fa-map-marker-alt {
+    font-size: 110%;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #logo {
-    padding: 25px 0px 8px 0px;
+    padding: 20px 0px 10px 0px;
   }
   #logo img {
     height: 28px;
@@ -75,21 +81,67 @@ p {
   }
 }
 
-button {
+.explorebutton {
   border: none;
   height: 52px;
   width: 222px;
   border-radius: 50px;
-  -webkit-box-shadow: 4px 4px 8px darkgray;
-          box-shadow: 4px 4px 8px darkgray;
+  -webkit-box-shadow: 4px 4px 12px lightgray;
+          box-shadow: 4px 4px 12px lightgray;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
-button a {
+.explorebutton a {
   font-size: 16px;
   font-weight: 400;
   color: white;
+}
+
+#instructions {
+  height: 380px;
+  padding-top: 30px;
+}
+
+#instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+#instructions .instructionbuttons {
+  background-color: #F6F6F6;
+  border: none;
+  height: 70px;
+  width: 330px;
+  border-radius: 22px;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 108%;
+  -webkit-box-shadow: 4px 4px 12px lightgray;
+          box-shadow: 4px 4px 12px lightgray;
+}
+
+#instructions li {
+  margin-bottom: 25px;
+}
+
+#instructions .fas {
+  font-size: 112%;
+  padding-bottom: 5px;
+}
+
+#instructions #restaurants, h2 {
+  margin-left: 18.5px;
+  margin-bottom: 22px;
 }
 
 #Restaurants {
@@ -105,8 +157,16 @@ button a {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 170px;
+    height: 180px;
     border-radius: 20px 20px 0px 0px;
+  }
+  #Restaurants .restaurantcard {
+    background-color: white;
+    -webkit-box-shadow: 0 5px 5px #EAEAEA;
+            box-shadow: 0 5px 5px #EAEAEA;
+    height: 255px;
+    width: 338px;
+    border-radius: 20px;
   }
 }
 
@@ -114,21 +174,41 @@ button a {
   gap: 18px;
 }
 
-.restaurantcard {
+.restaurantcarddetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurantcarddetails2 {
+  font-size: 150%;
+}
+
+.restaurantcarddetails2 .heartbutton {
+  border: none;
   background-color: white;
-  -webkit-box-shadow: 0 5px 5px #EAEAEA;
-          box-shadow: 0 5px 5px #EAEAEA;
-  height: 255px;
-  width: 338px;
-  border-radius: 20px;
 }
 
-.restaurantcard h3, .restaurantcard p {
-  margin: 0px 0px 0px 15px;
+.restaurantcarddetails2 .heartbutton .fas {
+  display: none;
 }
 
-#restaurantcarddetails {
-  display: inline-block;
+.restaurantcarddetails2 .heartbutton:active .far {
+  display: none;
+}
+
+.restaurantcarddetails2 .heartbutton:active .fas {
+  display: inline;
 }
 
 footer {

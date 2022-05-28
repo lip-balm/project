@@ -7,13 +7,17 @@ header {@extend .flexcenter;
         align-items: center;
         width: 100%;
         justify-content: center;
+        gap: 15px;
+        font-size: 16.5px;
+        padding-top: 1px;
+            .fa-map-marker-alt {font-size: 110%;}
         }
     }
 }
 
 #logo {
     @media only screen and (max-width : 767px) {
-        padding: 25px 0px 8px 0px;
+        padding: 20px 0px 10px 0px;
             img {height: 28px;};
 
     }

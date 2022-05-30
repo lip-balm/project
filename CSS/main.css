@@ -103,9 +103,10 @@ p {
   color: white;
 }
 
-.explorebutton a :hover {
+#explore button :hover {
   -webkit-box-shadow: 2px 3px 11px silver;
           box-shadow: 2px 3px 11px silver;
+  background-color: white;
 }
 
 #instructions {
@@ -294,45 +295,45 @@ p {
 footer {
   height: 200px;
   color: white;
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 25px;
 }
 
-@media only screen and (max-width: 767px) {
-  footer {
-    background-color: #353535;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 0 25px;
-  }
-  footer div {
-    font-family: "Shrikhand", cursive;
-    font-size: 18px;
-  }
-  footer ul {
-    padding: 0;
-    color: white;
-    list-style: none;
-  }
-  footer ul a {
-    color: white;
-    font-size: 16px;
-  }
-  footer ul li {
-    margin-top: 8px;
-  }
-  footer ul .fas {
-    margin-right: 10px;
-  }
+footer div {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+}
+
+footer ul {
+  padding: 0;
+  color: white;
+  list-style: none;
+}
+
+footer ul a {
+  color: white;
+  font-size: 16px;
+}
+
+footer ul li {
+  margin-top: 8px;
+}
+
+footer ul .fas {
+  margin-right: 10px;
 }
 
 a {

@@ -3,14 +3,13 @@
 @import "./utils/_extensions";
 @import "./utils/mixins";
 
+@import "./pages/menu";
 
 @import "./base/typography";
 
 @import "./layout/header";
 @import "./layout/homepagerestaurants";
 @import "./layout/footer";
-
-@import "./pages/_menu";
 
 a {text-decoration: none;
     color: black;}

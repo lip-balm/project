@@ -27,7 +27,7 @@
 }
 
 #explore button {& :hover {@include button-shadow-hovered;
-    background-color: lighten($color: linear-gradient(to bottom right, $color-secondary, $color-primary), $amount: 30);}}
+    background-color: lighten($color: white, $amount: 10);}}
 
 
 #instructions {height: 400px;

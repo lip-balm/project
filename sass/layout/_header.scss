@@ -1,5 +1,51 @@
+.loading {display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lighten($color: $color-primary, $amount: 35);
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;  
+}
+
+.loading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: lighten($color: $color-primary, $amount: 35);
+    border: 10px solid $color-tertiary;
+    border-top-color: $color-secondary;
+    border-radius: 50%;  
+    margin: auto;
+    animation: loading 1s linear infinite;
+    }
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);}  
+}
+
+@keyframes fadeout {
+    to {width: 0;
+        height:0;
+        overflow:hidden;
+    }   
+}
+
+.loading {animation: fadeout 0s ease-in 2s forwards;
+    // animation-fill-mode: forwards
+}
+
 header {@extend .flexcenter;
-    @media only screen and (max-width : 767px) {
+    z-index: 1;
+    background-color: white;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;}
+    }
     #location {background-color: $medium-gray;
         box-shadow: inset 0px 5px 10px -9px #353535;
         height: 50px;
@@ -10,15 +56,28 @@ header {@extend .flexcenter;
         gap: 15px;
         font-size: 16.5px;
         padding-top: 1px;
-            .fa-map-marker-alt {font-size: 110%;}
-        }
-    }
-}
+            @include desktop {padding-left: 0;
+                justify-content: flex-end;
+                width: 180px;
+                height: 50px;
+                border-radius: 10px;
+                background: linear-gradient(to right, $color-primary 0%, $color-secondary 35%, $color-tertiary 100%);
+                color: white;
+                // background: lighten($color: $color-primary, $amount: 35);
+                box-shadow: none;
+                //border: 3px solid $color-secondary;
+            }
+        .fa-map-marker-alt {font-size: 110%;}
+        h4 {font-weight: 400;
+            @include desktop {padding-right: 21px;}}
+            }
 
-#logo {
-    @media only screen and (max-width : 767px) {
-        padding: 20px 0px 10px 0px;
-            img {height: 28px;};
-
-    }
+#logo {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin-top: 5px;
+    padding: 20px 0px 10px 0px;
+    @include desktop {padding: 0;}
+        .fa-arrow-left {margin-left: -150px;}
+        img {height: 28px;}
 }

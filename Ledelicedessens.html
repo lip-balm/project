@@ -11,56 +11,84 @@
     </head>
     <body>
         <header>
-            <div id="logo"><a href="/Index.html"><i class="fas fa-arrow-left"></i><img src="images/logo/ohmyfood.png" alt="ohmyfood Logo" title="ohmyfood Logo"/></a></div>
+            <div id="logo">
+                <a href="/Index.html"><span class="arrow"><i class="fas fa-arrow-left"></i></span></a>
+                <div class="ohmyfoodlogo"><a href="/Index.html"><img src="images/logo/ohmyfood.png" alt="ohmyfood Logo" title="ohmyfood Logo"/></a></div>
+            </div>
         </header>
-        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand" title="Le Gourmand">
+        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand" title="Le Gourmand" class="menuimg">
         <section class="menu">
-            <div id="restaurantname"><h2>Le Gourmand</h2><i class="far fa-heart"></i></div>
+            <div id="restaurantname"><h2>Le Gourmand</h2><button class="heartbutton"><i class="fas fa-heart"></i><i class="far fa-heart"></i></button></div>
             <div class="entrees">
-                <p>Entrees</p>
-                <p class="item">Tuna Carpaccio</p>
-                <p class="itemdesc">Seasoned with yuzu</p> 
-                <p class="price">25€</p>
-                <p class="item">Crunchy Lobster Croquets</p>
-                <p class="itemdesc">With seasonal Vegetables</p> 
-                <p class="price">35€</p>
-                <p class="item">Mushroom Soup</p>
-                <p class="itemdesc">With truffles</p> 
-                <p class="price">20€</p>
+                    <p class="sectiontext">ENTREES</p>
+                    <div class="menucards">
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Tuna Carpaccio</h3><p>Seasoned with yuzu</p></div>
+                        <div class="price"><h4>25€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Crunchy Lobster Croquets</h3><p>With seasonal Vegetables</p></div>
+                        <div class="price"><h4>35€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Mushroom Soup</h3><p>With truffles</p></div>
+                        <div class="price"><h4>20€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
             </div>
             <div class="maindish">
-                <p>Main Dish</p>
-                <p class="item">Roast Chicken with Provincal Herbs</p>
-                <p class="itemdesc">With truffle cream</p>
-                <p class="price">40€</p>
-                <p class="item">Roasted Lobster</p>
-                <p class="itemdesc">With seasonal vegetables</p> 
-                <p class="price">35€</p>
-                <p class="item">Angust Beef Ribs</p>
-                <p class="itemdesc">With mashed parshnips</p> 
-                <p class="price">44€</p>
+                <p class="sectiontext1">MAIN DISH</p>
+                <div class="sectionborder"></div>
+                <div class="menucards">
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Roast Chicken with Provincal Herbs</h3><p>With truffle cream</p></div>
+                        <div class="price"><h4>40€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Roasted Lobster</h3><p>With seasonal vegetables</p></div>
+                        <div class="price"><h4>35€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Angust Beef Ribs</h3><p>With mashed parshnips</p></div>
+                        <div class="price"><h4>44€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
             </div> 
             <div class="desserts">
-                <p>Desserts</p>
-                <p class="item">Assorted Dessert Plate</p>
-                <p class="itemdesc">Chef's choice</p> 
-                <p class="price">18€</p>
-                <p class="item">Crème brulée</p>
-                <p class="itemdesc">Revisited</p> 
-                <p class="price">22€</p>
-                <p class="item">Tiramisu</p>
-                <p class="itemdesc">With hazelnuts</p> 
-                <p class="price">23€</p>
+                <p class="sectiontext">DESSERTS</p>
+                <div class="menucards">
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Assorted Dessert Plate</h3><p>Chef's choice</p></div> 
+                        <div class="price"><h4>18€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Crème brulée</h3><p>Revisited</p></div>
+                        <div class="price"><h4>22€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Tiramisu</h3><p>With hazelnuts</p></div>
+                        <div class="price"><h4>23€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
             </div>
-            </div>
+            <span><button type="submit" class="orderbutton"><a href="#">Order</a></button></span>
         </section>
-        <div class="orderbutton"><button type="submit">Order</button></div>
         <footer>
+            <div>ohmyfood</div>
             <ul>
                 <li><i class="fas fa-utensils"></i><a href="#">Suggest a restaurant</a></li>
                 <li><i class="fas fa-hands-helping"></i><a href="#">Become a partner</a></li>
                 <li><a href="#">Legal</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="button" onclick="location.href='mailto:ohmyfood@ohmyfood.com';">Contact</li>  
             </ul>
         </footer>
     </body>

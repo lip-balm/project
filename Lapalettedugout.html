@@ -11,56 +11,84 @@
     </head>
     <body>
         <header>
-            <div id="logo"><a href="/Index.html"><i class="fas fa-arrow-left"></i><img src="images/logo/ohmyfood.png" alt="ohmyfood Logo" title="ohmyfood Logo"/></a></div>
+            <div id="logo">
+                <a href="/Index.html"><span class="arrow"><i class="fas fa-arrow-left"></i></span></a>
+                <div class="ohmyfoodlogo"><a href="/Index.html"><img src="images/logo/ohmyfood.png" alt="ohmyfood Logo" title="ohmyfood Logo"/></a></div>
+            </div>
         </header>
-        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette" title="The Full Palette">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette" title="The Full Palette" class="menuimg">
         <section class="menu">
-            <div id="restaurantname"><h2>The Full Palette</h2><i class="far fa-heart"></i></div>
+            <div id="restaurantname"><h2>The Full Palette</h2><button class="heartbutton"><i class="fas fa-heart"></i><i class="far fa-heart"></i></button></div>
             <div class="entrees">
-                <p>Entrees</p>
-                <p class="item">Escargot</p>
-                <p class="itemdesc">With southern French spices</p> 
-                <p class="price">25€</p>
-                <p class="item">Duck Foie Gras</p>
-                <p class="itemdesc">With black truffle shavings</p> 
-                <p class="price">35€</p>
-                <p class="item">Fried egg</p>
-                <p class="itemdesc">Seasoned with truffle cream and...</p> 
-                <p class="price">20€</p>
+                <p class="sectiontext">ENTREES</p>
+                <div class="menucards">
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Escargot</h3><p>With southern French spices</p></div>
+                        <div class="price"><h4>25€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Duck Foie Gras</h3><p>With black truffle shavings</p></div> 
+                        <div class="price"><h4>35€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Fried egg</h3><p>Seasoned with truffle cream and toast</p></div>
+                        <div class="price"><h4>20€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
             </div>
             <div class="maindish">
-                <p>Main Dish</p>
-                <p class="item">Herb-Encrusted Steak</p>
-                <p class="itemdesc">With delicately sliced and seasoned veg...</p>
-                <p class="price">40€</p>
-                <p class="item">Ox Tail Shepard's Pie</p>
-                <p class="itemdesc">With black truffle and pureed parsnips</p> 
-                <p class="price">35€</p>
-                <p class="item">Filet of Sole</p>
-                <p class="itemdesc">With citrus dressing</p> 
-                <p class="price">44€</p>
+                <p class="sectiontext1">MAIN DISH</p>
+                <div class="sectionborder"></div>
+                <div class="menucards">
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Herb-Encrusted Steak</h3><p>With delicately sliced and seasoned veg...</p></div>
+                        <div class="price"><h4>40€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Ox Tail Shepard's Pie</h3><p>With black truffle and pureed parsnips</p></div>
+                        <div class="price"><h4>35€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Filet of Sole</h3><p>With citrus dressing</p></div>
+                        <div class="price"><h4>44€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
             </div> 
             <div class="desserts">
-                <p>Desserts</p>
-                <p class="item">Paris-Brest</p>
-                <p class="itemdesc">Revisited</p> 
-                <p class="price">18€</p>
-                <p class="item">Chocolate Macaroons</p>
-                <p class="itemdesc">With vanilla ice cream</p> 
-                <p class="price">22€</p>
-                <p class="item">Chocolate Mousse</p>
-                <p class="itemdesc">With spices and black truffle</p> 
-                <p class="price">23€</p>
+                <p class="sectiontext">DESSERTS</p>
+                <div class="menucards">
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Paris-Brest</h3><p>Revisited</p></div>
+                        <div class="price"><h4>18€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Chocolate Macaroons</h3><p>With vanilla ice cream</p></div>
+                        <div class="price"><h4>22€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="itemdesc"><h3>Chocolate Mousse</h3><p>With spices and black truffle</p></div>
+                        <div class="price"><h4>23€</h4></div>
+                        <div class="hovercheck"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
             </div>
-            </div>
+            <span><button type="submit" class="orderbutton"><a href="#">Order</a></button></span>
         </section>
-        <div class="orderbutton"><button type="submit">Order</button></div>
         <footer>
+            <div>ohmyfood</div>
             <ul>
                 <li><i class="fas fa-utensils"></i><a href="#">Suggest a restaurant</a></li>
                 <li><i class="fas fa-hands-helping"></i><a href="#">Become a partner</a></li>
                 <li><a href="#">Legal</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="button" onclick="location.href='mailto:ohmyfood@ohmyfood.com';">Contact</li>  
             </ul>
         </footer>
     </body>

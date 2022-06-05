@@ -1,3 +1,12 @@
 @mixin box-shadow {box-shadow: 0 5px 5px $medium-gray;}
 @mixin button-box-shadow {box-shadow: 2px 3px 11px lightgray;}
 @mixin button-shadow-hovered {box-shadow: 2px 3px 11px silver;}
+@mixin coloredbutton {background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    border-radius: 50px;
+    border: none;
+    height: 52px;
+    a {font-size: 16px;
+        font-weight: 400;
+        color: white;}}
+@mixin desktop {@media only screen and (min-width : 992px) {@content}};
+@mixin tablet {@media only screen and (min-width : 768px) and (max-width: 991px) {@content}};

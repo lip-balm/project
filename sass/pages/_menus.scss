@@ -1,1 +1,146 @@
-#restaurantname {font-family: $logo-font;}
+.fa-arrow-left {font-size: 18px;}
+
+.menuimg {width: 100%;
+    position: absolute;
+}
+
+.menuimg1 {width: 100%;
+    position: absolute;
+    object-fit:cover;
+    margin-top: -110px;
+    z-index: -2;
+}
+
+.menu {position: relative;
+    margin-top: 210px;
+    background-color: $light-gray;
+    height: 100%;
+    border-radius: 35px 35px 0 0;
+    padding-bottom: 30px;
+    .sectiontext {font-size: 16px;
+        margin: 45px 0 15px 15px;
+        padding-bottom: 5px;
+        border-bottom: 3.5px solid $color-tertiary;
+        width: 40px;}
+}
+
+
+.sectiontext1 {font-size: 16px;
+    margin: 45px 0px 5px 15px;}
+.sectionborder {border-bottom: 3.5px solid $color-tertiary;
+    width: 40px;
+    margin: 0px 0px 15px 15px;}
+
+
+.menucards {@extend .flexcenter;
+    gap: 15px;
+}
+
+#restaurantname {@extend .flexspacebtwn;
+    align-items: baseline;
+    font-size: 25px;
+    margin: 0 35px -30px 15px;
+    padding-top: 15px;
+    h2 {font-size: 27px;
+    font-family: $logo-font;
+    font-weight: 200;
+    width: 250px;}
+}
+
+span {@extend .flexcenter;}
+
+.orderbutton {@include coloredbutton;
+    @include button-box-shadow;
+    width: 200px;
+    margin: 50px;
+    &:hover {opacity: 88%;
+        @include button-shadow-hovered;}
+}
+
+.menuitem {@include box-shadow;
+  @extend .flexspacebtwn;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  background-color: white;
+  border-radius: 15px;
+  height: 70px;
+  width: 345px;
+    }
+    
+    
+.hovercheck {border-radius: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-tertiary;
+    color: white;
+    overflow: hidden;
+    width: 0;
+    height: 70px;
+    transition: .5s ease-in-out;
+    border-radius: 0 15px 15px 0;
+    text-align: center;
+      .fa-check-circle {font-size: 20px;
+        margin-top: 47%;}
+    }
+
+.menuitem:hover > .hovercheck {
+  width: 80px;
+  right: 0;
+  left: 0;
+  .fa-check-circle {
+      animation: loading .5s linear 1;}}
+
+.menuitem:hover > .itemdesc h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menuitem:hover > .itemdesc p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menuitem {
+  .price {margin: 0 20px -8px 0;
+    h4 {font-weight: 500;}}       
+  .itemdesc {width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;}
+  h3 {font-weight: 500;
+    margin: 0;
+    padding: 15px 10px 7px;}
+  p {font-size: 15px;
+    margin: 0;
+    padding: 0px 10px;
+    }
+    }
+        
+@keyframes menuload {
+0% {transform: translateY(3%);
+    opacity: 0};
+20% {transform: translateY(2%);
+    opacity: .2;};
+40% {transform: translateY(1%);
+    opacity: .4;};
+60% {transform: translateY(.5%);
+    opacity: .6;};
+80% {transform: translateY(.25%);
+    opacity: .8;};
+100% {transform: translateY(0%);
+    opacity: 1};
+}
+
+.entrees {animation: menuload 1s linear;}
+.maindish {animation: menuload 1s linear 1;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;}
+.desserts {animation: menuload 1s linear 1;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;}
+

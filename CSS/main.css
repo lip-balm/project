@@ -47,6 +47,16 @@ p {
   position: absolute;
 }
 
+@media only screen and (min-width: 992px) {
+  .menuimg {
+    height: 750px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: -150px;
+    z-index: -2;
+  }
+}
+
 .menuimg1 {
   width: 100%;
   position: absolute;
@@ -56,6 +66,15 @@ p {
   z-index: -2;
 }
 
+@media only screen and (min-width: 992px) {
+  .menuimg1 {
+    height: 750px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: -228px;
+  }
+}
+
 .menu {
   position: relative;
   margin-top: 210px;
@@ -63,6 +82,14 @@ p {
   height: 100%;
   border-radius: 35px 35px 0 0;
   padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu {
+    height: 100%;
+    margin-top: 500px;
+    padding-bottom: 5px;
+  }
 }
 
 .menu .sectiontext {
@@ -102,6 +129,26 @@ p {
   font-family: "Shrikhand", cursive;
   font-weight: 200;
   width: 250px;
+}
+
+@media only screen and (min-width: 992px) {
+  #restaurantname h2 {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .menugroups {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .orderbutton {
@@ -386,7 +433,7 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 20px;
+    padding: 20px;
   }
 }
 
@@ -417,7 +464,7 @@ header {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 180px;
-    height: 50px;
+    height: 38px;
     border-radius: 10px;
     background: -webkit-gradient(linear, left top, right top, from(#9356DC), color-stop(35%, #FF79DA), to(#99E2D0));
     background: linear-gradient(to right, #9356DC 0%, #FF79DA 35%, #99E2D0 100%);
@@ -458,11 +505,12 @@ header {
 @media only screen and (min-width: 992px) {
   #logo {
     padding: 0;
+    margin-left: 20px;
   }
 }
 
 #logo .fa-arrow-left {
-  margin-left: -150px;
+  margin: 5px 10px 0 -10px;
 }
 
 #logo img {

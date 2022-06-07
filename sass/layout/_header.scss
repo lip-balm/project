@@ -63,9 +63,7 @@ header {@extend .flexcenter;
                 border-radius: 10px;
                 background: linear-gradient(to right, $color-primary 0%, $color-secondary 35%, $color-tertiary 100%);
                 color: white;
-                // background: lighten($color: $color-primary, $amount: 35);
                 box-shadow: none;
-                //border: 3px solid $color-secondary;
             }
         .fa-map-marker-alt {font-size: 110%;}
         h4 {font-weight: 400;

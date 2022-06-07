@@ -8,5 +8,5 @@
     a {font-size: 16px;
         font-weight: 400;
         color: white;}}
-@mixin desktop {@media only screen and (min-width : 992px) {@content}};
-@mixin tablet {@media only screen and (min-width : 768px) and (max-width: 991px) {@content}};
+@mixin desktop {@media only screen and (min-width : 992px) {@content}}
+@mixin tablet {@media only screen and (min-width : 768px) and (max-width: 991px) {@content}}

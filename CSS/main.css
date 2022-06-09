@@ -57,6 +57,15 @@ p {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menuimg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: -75px;
+    z-index: -2;
+  }
+}
+
 .menuimg1 {
   width: 100%;
   position: absolute;
@@ -75,6 +84,14 @@ p {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menuimg1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: -188px;
+  }
+}
+
 .menu {
   position: relative;
   margin-top: 210px;
@@ -89,6 +106,12 @@ p {
     height: 100%;
     margin-top: 500px;
     padding-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    margin-top: 400px;
   }
 }
 

@@ -6,6 +6,9 @@
         object-fit: cover;
         margin-top: -150px;
         z-index: -2;}
+    @include tablet {object-fit: cover;
+        margin-top: -75px;
+        z-index: -2;}
 }
 
 .menuimg1 {width: 100%;
@@ -16,6 +19,8 @@
     @include desktop {height: 750px;
         object-fit: cover;
         margin-top: -228px;}
+    @include tablet {object-fit: cover;
+        margin-top: -188px;}    
 }
 
 .menu {position: relative;
@@ -27,6 +32,7 @@
     @include desktop {height: 100%;
         margin-top: 500px;
         padding-bottom: 5px;}
+    @include tablet {margin-top: 400px;}
     .sectiontext {font-size: 16px;
         margin: 45px 0 15px 15px;
         padding-bottom: 5px;

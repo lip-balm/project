@@ -44,9 +44,9 @@ header {@extend .flexcenter;
         @include desktop {
             flex-direction: row;
             justify-content: space-between;
-            padding: 20px;}
-    }
-    #location {background-color: $medium-gray;
+            padding: 20px;}}
+    
+#location {background-color: $medium-gray;
         box-shadow: inset 0px 5px 10px -9px #353535;
         height: 50px;
         display: flex;
@@ -76,7 +76,9 @@ header {@extend .flexcenter;
     margin-top: 5px;
     padding: 20px 0px 10px 0px;
     @include desktop {padding: 0;
-        margin-left: 20px;}
-        .fa-arrow-left {margin: 5px 10px 0 -10px}
-        img {height: 28px;}
+        margin-left: 20px;};
+        .fa-arrow-left {margin: 5px 10px 0 -10px;};
+        img {height: 28px;};
+    
+
 }

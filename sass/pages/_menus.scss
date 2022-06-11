@@ -40,7 +40,6 @@
         width: 40px;}
 }
 
-
 .sectiontext1 {font-size: 16px;
     margin: 45px 0px 5px 15px;}
 .sectionborder {border-bottom: 3.5px solid $color-tertiary;
@@ -76,8 +75,12 @@ span {@extend .flexcenter;}
     @include button-box-shadow;
     width: 200px;
     margin: 50px;
-    &:hover {opacity: 88%;
+    color: white;
+    &:focus {opacity: 88%;
         @include button-shadow-hovered;}
+    @include desktop {&:hover {opacity: 88%;
+        @include button-shadow-hovered;}
+    }
 }
 
 .menuitem {@include box-shadow;
@@ -105,26 +108,51 @@ span {@extend .flexcenter;}
       .fa-check-circle {font-size: 20px;
         margin-top: 47%;}
     }
-
-.menuitem:hover > .hovercheck {
+ // here
+.menuitem:focus > .hovercheck {
   width: 80px;
   right: 0;
   left: 0;
   .fa-check-circle {
       animation: loading .5s linear 1;}}
 
-.menuitem:hover > .itemdesc h3 {
+@include desktop {
+    .menuitem:hover > .hovercheck {
+    width: 80px;
+    right: 0;
+    left: 0;
+    .fa-check-circle {
+        animation: loading .5s linear 1;}}
+}
+
+.menuitem:focus > .itemdesc h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.menuitem:hover > .itemdesc p {
+@include desktop {
+    .menuitem:hover > .itemdesc h3 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.menuitem:focus > .itemdesc p {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
+@include desktop {
+    .menuitem:hover > .itemdesc p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+ // here
 .menuitem {
   .price {margin: 0 20px -8px 0;
     h4 {font-weight: 500;}}       

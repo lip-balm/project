@@ -13,15 +13,18 @@
 }
 }
 
-.explorebutton {a {font-size: 16px;
-    font-weight: 400;
-    color: white;}
+.explorebutton {
+    color: white;
     margin-top: 15px;
     width: 222px; 
     @include coloredbutton;
     @include button-box-shadow;
-    &:hover {opacity: 90%;
-        @include button-shadow-hovered;}       
+    &:focus {opacity: 90%;
+        @include button-shadow-hovered;}   
+    @include desktop {
+        &:hover {opacity: 90%;
+        @include button-shadow-hovered;}     
+    }  
 }
 
 #instructions {height: 400px;
@@ -51,9 +54,14 @@
         margin-left: 10px;
         @include button-box-shadow;}
     li {margin-bottom: 25px;
-        & :hover {@include button-shadow-hovered;
+        & :focus {@include button-shadow-hovered;
             background-color: lighten($color: $color-primary, $amount: 35);
             .fas {color: $color-primary;}}
+        @include desktop {
+        & :hover {@include button-shadow-hovered;
+            background-color: lighten($color: $color-primary, $amount: 35);
+            .fas {color: $color-primary;}}}
+        }
     .fas {margin-top: 5px;
         font-size: 17px;
         padding-bottom: 5px;
@@ -61,9 +69,9 @@
     .fa-mobile-alt {font-size: 20px;}
     button {& :hover {box-shadow: none;}}
     }
-}
 
-.instructionbuttons p {background-color: $color-primary;
+
+.instructionbuttons span {background-color: $color-primary;
     border-radius: 50px;
     height: 20px;
     width: 25px;
@@ -180,13 +188,24 @@
                     .fas {visibility: hidden;
                         color: white;
                         transition: opacity 500ms ease-in;}
-        &:hover {
-        .far {display: none;}
-        .fas {visibility: visible;
-            transition: all 500ms ease-in;
-            background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;}
-            }
+            &:focus {
+            .far {display: none;}
+            .fas {visibility: visible;
+                transition: all 500ms ease-in;
+                background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;}
+                }
+            @include desktop {
+            &:hover {
+            .far {display: none;}
+            .fas {visibility: visible;
+                transition: all 500ms ease-in;
+                background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;}
+                }
+        }
 }

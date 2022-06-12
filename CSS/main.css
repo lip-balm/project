@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
-
 .flexcenter, .menucards, span, header, #explore, #instructions ul, #restaurantcards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +157,12 @@ p {
 @media only screen and (min-width: 992px) {
   #restaurantname h2 {
     width: 500px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #restaurantname h2 {
+    width: 300px;
   }
 }
 

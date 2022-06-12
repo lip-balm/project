@@ -60,7 +60,8 @@
     font-family: $logo-font;
     font-weight: 200;
     width: 250px;
-    @include desktop {width: 500px}}
+    @include desktop {width: 500px}
+    @include tablet {width: 300px}}
 }
 
 span {@extend .flexcenter;}

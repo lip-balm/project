@@ -299,6 +299,11 @@ p {
   }
 }
 
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .menuitem .price {
   margin: 0 20px -8px 0;
 }

@@ -8,23 +8,12 @@ Description
         Ohmyfood is an online food ordering company. Our concept allows users to compose their
         own menu and reduce waiting time in restaurants because they make their choice in
         advance. No more wasting time consulting the menu!
+    
+    Compatibility
+        Responsive on mobile, tablet, and desktop
 
-Getting Started
+Take a Look
     Link: https://lip-balm.github.io/project/index.html
-
-Dependencies
-Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-ex. Windows 10
-Installing
-How/where to download your program
-Any modifications needed to be made to files/folders
-Executing program
-How to run the program
-Step-by-step bullets
-code blocks for commands
-Help
-Any advise for common problems or issues.
-
 
 Contributors names and contact info
     Internal Project Organization
@@ -35,3 +24,7 @@ Contributors names and contact info
     
     Contact Email
         webteam@ohmyfood.com
+
+issues
+safari - heart and buttons transitions not working on tablet/mobile
+firefox - typeface isn't reflecting..

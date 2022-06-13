@@ -642,14 +642,14 @@ header {
 }
 
 .explorebutton:focus {
-  opacity: 90%;
+  opacity: 88%;
   -webkit-box-shadow: 2px 3px 11px silver;
           box-shadow: 2px 3px 11px silver;
 }
 
 @media only screen and (min-width: 992px) {
   .explorebutton:hover {
-    opacity: 90%;
+    opacity: 88%;
     -webkit-box-shadow: 2px 3px 11px silver;
             box-shadow: 2px 3px 11px silver;
   }

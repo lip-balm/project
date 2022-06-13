@@ -19,10 +19,10 @@
     width: 222px; 
     @include coloredbutton;
     @include button-box-shadow;
-    &:focus {opacity: 90%;
+    &:focus {opacity: 88%;
         @include button-shadow-hovered;}   
     @include desktop {
-        &:hover {opacity: 90%;
+        &:hover {opacity: 88%;
         @include button-shadow-hovered;}     
     }  
 }

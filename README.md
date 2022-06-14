@@ -26,5 +26,5 @@ Contributors names and contact info
         webteam@ohmyfood.com
 
 issues
-safari - heart and buttons transitions not working on tablet/mobile
+safari - heart and buttons transitions not working on tablet/mobile -> but if i inspect and click focus, it does?
 firefox - typeface isn't reflecting..

@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .flexcenter, .menucards, span, header, #explore, #instructions ul, #restaurantcards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,19 +36,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-p {
-  font-size: 18px;
-  font-weight: 300;
 }
 
 .fa-arrow-left {
@@ -94,7 +94,7 @@ p {
 
 .menu {
   position: relative;
-  margin-top: 210px;
+  margin-top: 205px;
   background-color: #F6F6F6;
   height: 100%;
   border-radius: 35px 35px 0 0;
@@ -104,7 +104,7 @@ p {
 @media only screen and (min-width: 992px) {
   .menu {
     height: 100%;
-    margin-top: 500px;
+    margin-top: 490px;
     padding-bottom: 5px;
   }
 }
@@ -156,12 +156,18 @@ p {
 
 @media only screen and (min-width: 992px) {
   #restaurantname h2 {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #restaurantname {
     width: 500px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #restaurantname h2 {
+  #restaurantname {
     width: 300px;
   }
 }
@@ -193,10 +199,11 @@ p {
   color: white;
 }
 
-.orderbutton a {
+.orderbutton p {
+  padding-top: 1px;
   font-size: 16px;
   font-weight: 400;
-  color: white;
+  text-align: center;
 }
 
 .orderbutton:focus {
@@ -322,13 +329,13 @@ p {
 .menuitem h3 {
   font-weight: 500;
   margin: 0;
-  padding: 15px 10px 7px;
+  padding: 14px 12px 6px;
 }
 
 .menuitem p {
   font-size: 15px;
   margin: 0;
-  padding: 0px 10px;
+  padding: 0px 12px;
 }
 
 @-webkit-keyframes menuload {
@@ -635,10 +642,10 @@ header {
           box-shadow: 2px 3px 11px lightgray;
 }
 
-.explorebutton a {
+.explorebutton p {
+  padding-top: 1px;
   font-size: 16px;
   font-weight: 400;
-  color: white;
 }
 
 .explorebutton:focus {
@@ -750,11 +757,6 @@ header {
   font-size: 20px;
 }
 
-#instructions button :hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .instructionbuttons span {
   background-color: #9356DC;
   border-radius: 50px;
@@ -840,7 +842,7 @@ header {
   background-color: white;
   -webkit-box-shadow: 0 5px 5px #EAEAEA;
           box-shadow: 0 5px 5px #EAEAEA;
-  height: 250px;
+  height: 255px;
   width: 338px;
   border-radius: 20px;
 }

@@ -16,9 +16,12 @@
 .explorebutton {
     color: white;
     margin-top: 15px;
-    width: 222px; 
+    width: 222px;
     @include coloredbutton;
     @include button-box-shadow;
+    p {padding-top: 1px;
+        font-size: 16px;
+        font-weight: 400;}
     &:focus {opacity: 88%;
         @include button-shadow-hovered;}   
     @include desktop {
@@ -67,8 +70,7 @@
         padding-bottom: 5px;
         pointer-events: none;}
     .fa-mobile-alt {font-size: 20px;}
-    button {& :hover {box-shadow: none;}}
-    }
+}
 
 
 .instructionbuttons span {background-color: $color-primary;
@@ -110,7 +112,7 @@
     .restaurantcardimg1 img {object-position: 0px -150px;}
     .restaurantcard {background-color: white;
         @include box-shadow;
-        height: 250px;
+        height: 255px;
         width: 338px;
         border-radius: 20px;
         @include desktop {margin: 0 28px 45px 28px;}
@@ -184,10 +186,10 @@
 .restaurantcarddetails2 {font-size: 25px;}
 
 .heartbutton {border: none;
-                    background-color: transparent;
-                    .fas {visibility: hidden;
-                        color: white;
-                        transition: opacity 500ms ease-in;}
+    background-color: transparent;
+        .fas {visibility: hidden;
+                color: white;
+                transition: opacity 500ms ease-in;}
             &:focus {
             .far {display: none;}
             .fas {visibility: visible;

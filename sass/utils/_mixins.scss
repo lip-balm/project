@@ -4,9 +4,6 @@
 @mixin coloredbutton {background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     border-radius: 50px;
     border: none;
-    height: 52px;
-    a {font-size: 16px;
-        font-weight: 400;
-        color: white;}}
+    height: 52px;}
 @mixin desktop {@media only screen and (min-width : 992px) {@content}};
 @mixin tablet {@media only screen and (min-width : 768px) and (max-width: 991px) {@content}};

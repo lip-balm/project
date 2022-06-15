@@ -10,7 +10,7 @@
     h2 {margin-bottom: 20px;
         margin-top: 0;
         @include desktop {margin-bottom: 10px;}       
-}
+    }
 }
 
 .explorebutton {
@@ -22,8 +22,12 @@
     p {padding-top: 1px;
         font-size: 16px;
         font-weight: 400;}
-    &:focus {opacity: 88%;
-        @include button-shadow-hovered;}   
+    @include mobile {
+        &:focus {opacity: 88%;
+        @include button-shadow-hovered;}}
+    @include tablet {   
+        &:focus {opacity: 88%;
+        @include button-shadow-hovered;}}
     @include desktop {
         &:hover {opacity: 88%;
         @include button-shadow-hovered;}     
@@ -57,9 +61,14 @@
         margin-left: 10px;
         @include button-box-shadow;}
     li {margin-bottom: 25px;
+        @include tablet {
         & :focus {@include button-shadow-hovered;
             background-color: lighten($color: $color-primary, $amount: 35);
-            .fas {color: $color-primary;}}
+            .fas {color: $color-primary;}}}
+        @include mobile {
+            & :focus {@include button-shadow-hovered;
+            background-color: lighten($color: $color-primary, $amount: 35);
+            .fas {color: $color-primary;}}}
         @include desktop {
         & :hover {@include button-shadow-hovered;
             background-color: lighten($color: $color-primary, $amount: 35);
@@ -152,9 +161,8 @@
             margin-top: 22px;}
         @include tablet {margin-left: 378px;
             margin-top: 14px;}
-    
     }
-    }
+}
 
 #restaurantcards {
     @extend .flexcenter;
@@ -168,7 +176,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 8px;}
-    }
+}
 
 .new {position: relative;
 }

@@ -13,7 +13,8 @@ Description
         Responsive on mobile, tablet, and desktop
 
 Take a Look
-    Link: https://lip-balm.github.io/project/index.html
+    Link to ohmyfood: https://lip-balm.github.io/project/index.html
+    Link to GitHub Repsitory: https://github.com/lip-balm/project/tree/project3
 
 Contributors names and contact info
     Internal Project Organization

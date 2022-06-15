@@ -257,15 +257,28 @@ p {
   margin-top: 47%;
 }
 
-.menuitem:focus > .hovercheck {
-  width: 80px;
-  right: 0;
-  left: 0;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menuitem:focus > .hovercheck {
+    width: 80px;
+    right: 0;
+    left: 0;
+  }
+  .menuitem:focus > .hovercheck .fa-check-circle {
+    -webkit-animation: loading .5s linear 1;
+            animation: loading .5s linear 1;
+  }
 }
 
-.menuitem:focus > .hovercheck .fa-check-circle {
-  -webkit-animation: loading .5s linear 1;
-          animation: loading .5s linear 1;
+@media only screen and (max-width: 767px) {
+  .menuitem:focus > .hovercheck {
+    width: 80px;
+    right: 0;
+    left: 0;
+  }
+  .menuitem:focus > .hovercheck .fa-check-circle {
+    -webkit-animation: loading .5s linear 1;
+            animation: loading .5s linear 1;
+  }
 }
 
 @media only screen and (min-width: 992px) {

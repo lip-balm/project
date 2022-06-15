@@ -116,12 +116,21 @@ span {@extend .flexcenter;}
         margin-top: 47%;}
     }
 
+@include tablet {
 .menuitem:focus > .hovercheck {
   width: 80px;
   right: 0;
   left: 0;
   .fa-check-circle {
-      animation: loading .5s linear 1;}}
+      animation: loading .5s linear 1;}}}
+
+@include mobile {
+.menuitem:focus > .hovercheck {
+  width: 80px;
+  right: 0;
+  left: 0;
+  .fa-check-circle {
+      animation: loading .5s linear 1;}}}
 
 @include desktop {
     .menuitem:hover > .hovercheck {

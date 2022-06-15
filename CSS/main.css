@@ -161,13 +161,13 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-  #restaurantname {
+  #restaurantname h2 {
     width: 500px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #restaurantname {
+  #restaurantname h2 {
     width: 300px;
   }
 }
@@ -970,6 +970,7 @@ header {
 .heartbutton {
   border: none;
   background-color: transparent;
+  margin-right: 5px;
 }
 
 .heartbutton .fas {

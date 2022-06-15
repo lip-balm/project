@@ -24,6 +24,3 @@ Contributors names and contact info
     
     Contact Email
         webteam@ohmyfood.com
-
-issues
-safari - heart effect not working on tablet/mobile

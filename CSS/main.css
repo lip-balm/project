@@ -195,12 +195,14 @@ p {
   -webkit-box-shadow: 2px 3px 11px lightgray;
           box-shadow: 2px 3px 11px lightgray;
   width: 200px;
-  margin: 50px;
+  margin: 50px auto;
   color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .orderbutton p {
-  padding-top: 1px;
+  padding-top: 17px;
   font-size: 16px;
   font-weight: 400;
   text-align: center;

@@ -76,9 +76,10 @@ span {@extend .flexcenter;}
 .orderbutton {@include coloredbutton;
     @include button-box-shadow;
     width: 200px;
-    margin: 50px;
+    margin: 50px auto;
     color: white;
-    p {padding-top: 1px;
+    align-content: center;
+    p {padding-top: 17px;
         font-size: 16px;
         font-weight: 400;
         text-align: center;}

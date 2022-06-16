@@ -1,6 +1,6 @@
 # README - Project 3
 
-## Project Title
+### Project Title
     ohmyfood Website
 
 ### Description
